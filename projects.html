@@ -56,8 +56,8 @@
     <a class="logo" href="#" title="Tableau"> <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" alt="Tableau"> <span>Tableau</span> </a>
     <a class="logo" href="#" title="Power BI"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI"> <span>Power BI</span> </a>
     <a class="logo"><img src="https://cdn.simpleicons.org/jira" alt="Jira"><span>JIRA</span></a>
-    <a class="logo"><img src="https://cdn.simpleicons.org/salesforce" alt="Salesforce"><span>Salesforce</span></a>
-    <a class="logo"><img src="https://cdn.simpleicons.org/salesforce/00A1E0" alt="Marketing Cloud"><span>Marketing Cloud</span></a>
+    <a class="logo" href="#" title="Salesforce"> <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" alt="Salesforce"> <span>Salesforce</span> </a>
+    <a class="logo" href="#" title="Salesforce Marketing Cloud"> <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" alt="Marketing Cloud"> <span>Marketing Cloud</span> </a>
     <a class="logo"><img src="https://cdn.simpleicons.org/github" alt="GitHub"><span>GitHub</span></a>
     <a class="logo"><img src="https://cdn.simpleicons.org/postman" alt="Postman"><span>Postman</span></a>
   </div>
@@ -69,7 +69,7 @@
     <a class="logo"><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript"><span>JavaScript</span></a>
     <a class="logo" href="#" title="Amazon Web Services"> <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS"> <span>AWS</span></a>
     <a class="logo"><img src="https://cdn.simpleicons.org/huggingface" alt="Hugging Face"><span>Hugging Face</span></a>
-    <a class="logo"><img src="https://cdn.simpleicons.org/openai" alt="OpenAI"><span>OpenAI API</span></a>
+    <a class="logo" href="#" title="OpenAI"> <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI"> <span>OpenAI API</span> </a>
     <a class="logo"><img src="https://cdn.simpleicons.org/gradio/FF6F61" alt="Gradio"><span>Gradio</span></a>
     <a class="logo"><img src="https://cdn.simpleicons.org/n8n/FD4968" alt="n8n"><span>n8n</span></a>
   </div>
@@ -86,6 +86,7 @@
     <!-- CATEGORY FILTER -->
     <div class="filter-bar">
       <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="agentic">Agentic AI</button>
       <button class="filter-btn" data-filter="product">Product Strategy</button>
       <button class="filter-btn" data-filter="analytics">Analytics</button>
       <button class="filter-btn" data-filter="market">Market Research</button>
@@ -94,6 +95,40 @@
 
     <!-- PROJECT GALLERY -->
     <div class="projects-gallery">
+      <!-- Featured Projects (Top 4) -->
+      <div class="project-card featured-project" data-category="agentic"
+      onclick="window.open('https://github.com/mrudu10/Text2SQL-Gen-AI-App','_blank','noopener');">
+        <img src="NL to SQL.jpg" alt="Natural Language Text to SQL Agent">
+        <h3>Natural Language Text to SQL Agent</h3>
+        <p><strong>Tech stack:</strong> Context Engineering, Agentic Orchestration, Guardrails and Evaluations, API Integration<br><br>
+        Sequential multi-agent Text-to-SQL system converting natural-language queries into schema-compliant SQL. Implemented three-layer evaluation framework (Binary Gates, APF metrics, LLM-as-Judge) for enterprise-ready analytics with zero destructive queries. Built with LangFlow, OpenAI, AstraDB, and Lovable.</p>
+      </div>
+
+      <div class="project-card featured-project" data-category="agentic"
+      onclick="window.open('https://github.com/mrudu10/AI_Product_hub','_blank','noopener');">
+        <img src="AI PM image.jpg" alt="AI Product Tutor with Contextual PM Persona">
+        <h3>AI Product Tutor with Contextual PM Persona</h3>
+        <p><strong>Tech stack:</strong> Gradio, Python, AI Prompt Engineering, API Integration, Google Colab, Git<br><br>
+        Contextual PM tutor with streaming responses; reduced follow-up questions by ~60% in pilot users. Built Gradio-based streaming system with complexity slider, improving personalization in PM learning tools for AI Product managers.</p>
+      </div>
+
+      <div class="project-card featured-project" data-category="agentic"
+      onclick="window.open('https://github.com/mrudu10/Semi-Autonomous-AI-Assistant','_blank','noopener');">
+        <img src="Linkedin AI agent.png" alt="Semi-Autonomous AI Assistant">
+        <h3>Semi-Autonomous AI Assistant</h3>
+        <p><strong>Tech stack:</strong> n8n, OpenAI, API Integration, Data Processing<br><br>
+        Built a semi-autonomous LinkedIn outreach AI agent using n8n + OpenAI, automating profile enrichment, common-ground detection, and personalized InMail draft generation—improving cold-connect follow-through by transforming raw connections into ready-to-send, context-aware messages. Designed a resilient agent workflow with environment awareness, implementing data validation, role-based filtering (PMs / Hiring Managers), fallback strategies, and execution logging to handle API failures, low-signal profiles, and retries—ensuring reliable message generation at scale.</p>
+      </div>
+
+      <div class="project-card featured-project" data-category="agentic"
+      onclick="window.open('https://github.com/mrudu10/RAG-based-ProductAnalyzer','_blank','noopener');">
+        <img src="RAG agent.png" alt="ProductLens AI">
+        <h3>ProductLens AI — KPI-Driven Competitive Intelligence (RAG)</h3>
+        <p><strong>Tech stack:</strong> RAG, Agentic AI, Vector Database, LangFlow<br><br>
+        Built a KPI-driven Agentic RAG system for competitive intelligence, enabling product managers to perform feature-level competitor analysis and roadmap prioritization grounded strictly in verified product documentation—eliminating hallucinated features and ungrounded assumptions. Designed hard input gates, context-bound retrieval, and deterministic output contracts (KPI relevance checks, market alignment validation, early exits, structured schemas), achieving 4.73/5 evaluation score across accuracy, context faithfulness, and metric reasoning while explicitly trading off depth vs latency.</p>
+      </div>
+
+      <!-- Other Projects -->
       <div class="project-card" data-category="product" 
      onclick="window.open('https://relic-pruner-edf.notion.site/Product-Planning-Strategy-User-Research-Marketing-Analytics-dd04bb5e136247a19268ae5420970d59?pvs=74','_blank','noopener');">
         <img src="growthWave.jpg" alt="GrowthWave">
